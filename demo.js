@@ -21,6 +21,7 @@ button.addEventListener("click", () => {
     outputBox[3].textContent = "MiddleChar : " + middleChar;
 
     let word = str.split(" ").filter(word => word !== "");
+    //hujgjahfjashdfjshdjfhd
     let count = word.length;
     outputBox[4].textContent = "TotalWords : " + word.length;
 
