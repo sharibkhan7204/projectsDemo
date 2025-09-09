@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+#mainClas {
+    min-height: 100vh;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    height: 300px;
+    width: 600px;
+    border: 0px;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.9);
+    border-radius: 1em;
+}
+
+.entryArea {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+    position: relative;
+    height: 80px;
+    line-height:
+        80px
+}
+
+#inputBox {
+    position: absolute;
+    width: 280px;
+    outline: none;
+    font-size: 1.2em;
+    padding: 0px 20px;
+    /* box-shadow: 0 0 16px rgba(0,0,0,0.7); */
+    border: solid 1px black;
+    line-height: 40px;
+    border-radius: 8px;
+    /* border: 0px; */
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 1111;
+    left: 5%;
+}
+
+.labelLine {
+    position: absolute;
+    left: 11%;
+    padding: 0 10px;
+    font-size: 1em;
+    background-color: lightgray;
+    transition: 0.2s ease;
+    color: rgba(0, 0, 0, 0.369);
+    width: 140px;
+}
+
+input:focus
+ {
+    color: black;
+    border: 4px solid crimson;
+}
+
+input:focus+.labelLine {
+    border-radius: 50%;
+    height: 30px;
+    line-height: 30px;
+    transform: translate(-16px, -22px) scale(0.88);
+    z-index: 1111;
+    color: rgba(0, 0, 0, 0.969);
+}
+
+
+
+
+button {
+    position: absolute;
+    left: 60%;
+    width: 50px;
+    outline: none;
+    font-size: 1.5em;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.7);
+    line-height: 40px;
+    border-radius: 8px;
+    border: 0px;
+    background: transparent;
+    z-index: 1111;
+}
+
+button:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+
+#outputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.outputBox {
+    height: 30px;
+    width: 280px;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 0px 16px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    color: rgb(104, 31, 5);
+}
