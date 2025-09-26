@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="spotify.css">
+    <title>Spotify Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <main>
+        <div id="musicMain">
+            <img
+                src="https://res.cloudinary.com/dygejt2mm/image/upload/v1756715407/Screenshot_2025-09-01_135057-Picsart-AiImageEnhancer_sxs41y.png" />
+
+            <span>
+                <H1>
+                    Dil to Bachcha hai ji
+                </H1>
+
+                <p>
+                    Rahat Fateh ALi Khan
+                </p>
+
+                <div class="timeline">
+                    <input type="range" id="rangeBar">
+                </div>
+                <audio id="audioPlayer" src="https://res.cloudinary.com/dygejt2mm/video/upload/v1756880205/Dil_To_Bachcha_Hai_ji_p7uhg8.mp3"></audio>
+
+                <div class="controllers">
+                    <button class="back"><i class="fa-solid fa-backward-step"></i></button>
+                    <button class="pause"></button>
+                    <button class="forward"><i class="fa-solid fa-forward-step"></i></button>
+                </div>
+            </span>
+        </div>
+    </main>
+    <script src="spotify.js"></script>
+</body>
+
+</html>

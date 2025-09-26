@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#page-3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #0f0f0f;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    display: grid;
+    padding: 5px;
+
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "video detail detail"
+        "video detail detail"
+        "Specification Specification Specification";
+}
+
+
+.p1 {
+    grid-area: video;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 16px rgb(255, 255, 255, 0.2);
+}
+
+.videoEdit {
+    width: 70vw;
+    height: 70vh;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.p2 {
+    grid-area: detail;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 2.5);
+    border: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    transition: .3s ease;
+}
+
+.details {
+    border-radius: 8px;
+    margin: 10px 0px;
+    height: 70vh;
+}
+
+/* .p2:hover {
+    transform: scale(1.1);
+    background-color: #0f0f0f;
+    background: linear-gradient(to-bottom, #0f0f0f, #4b4949);
+} */
+
+.p3 {
+    grid-area: Specification;
+    box-shadow: 0 0 16px rgb(255, 255, 255, 0.2);
+    border: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.specs {
+    margin: 0px 10px;
+    height: 30vh;
+    border-radius: 8px;
+}
+
+.p1 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+.details ul {
+    color: #D4AF37;
+    padding: 0px 20px;
+    font-size: 60px;
+    position: relative;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.details ul li {
+    color: #D4AF37;
+    /* list-style: none; */
+    line-height: 50px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.de {
+    position: relative;
+    top: 20%;
+    left: -9%;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #D4AF37;
+}
+
+.p2 ul li span {
+    color: silver;
+}
+
+li {
+    color: #D4AF37;
+    transition: .2s ease-in;
+}
+
+.p2 ul li:hover {
+    transform: scale(1.2);
+    font-weight: bold;
+    list-style: none;
+    text-align: start;
+    transition: .3s ease-out;
+    transform: translateX(20px);
+
+}
+
+.specs1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+    border: 0;
+    color: #D4AF37;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.specs2 {
+    height: 25vh;
+    width: 50%;
+    border-right:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 50px;
+}
+
+span {
+    color: silver;
+}
+
+.specs3 {
+    height: 25vh;
+    width: 50%;
+    border-left:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 50px;
+}
+
+.specsEnd {
+    display: flex;
+    flex-direction: row;
+}
+
+.specs2 li:hover {
+    transform: scale(1.2);
+    font-weight: bold;
+    list-style: none;
+    text-align: start;
+    transition: .3s ease-out;
+    transform: translateY(-10px);
+}
+
+.specs3 li:hover {
+    transform: scale(1.2);
+    font-weight: bold;
+    list-style: none;
+    text-align: start;
+    transition: .3s ease-out;
+    transform: translateY(-10px);
+}
+
+
+.inventory-btn{
+  background-color: #D4AF37;
+  width: 200px;
+  height: 30px;
+  border-radius: 8px;
+  border: 0;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  transition: transform 0.3s ease, color 0.5s ease;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.inventory-btn:hover{
+  box-shadow: 0 0 8px #D4AF37;
+  background-color: #fff;
+  color: #D4AF37;
+  transform: scale(1.2);
+}
