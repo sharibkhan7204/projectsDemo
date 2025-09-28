@@ -10,7 +10,7 @@
 }
 
 #First-page {
-  background-image: url("car_upscaled.jpg");
+  background-image: url("HomePage/car_upscaled.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
